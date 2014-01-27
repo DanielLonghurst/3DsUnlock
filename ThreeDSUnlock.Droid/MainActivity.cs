@@ -68,6 +68,12 @@ namespace ThreeDSUnlock.Droid
 			}
       }
 
+		/// <Docs>Bundle in which to place your saved state.</Docs>
+		/// <summary>
+		/// Raises the save instance state event.
+		/// </summary>
+		/// <param name="outState"> Activity's bundle
+		/// </param>
 		protected override void OnSaveInstanceState (Bundle outState)
 		{
 			outState.PutString ("editText", editText.Text);
